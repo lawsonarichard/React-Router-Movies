@@ -5,7 +5,9 @@ const Movie = (props) => {
   const [movie, setMovie] = useState({});
  
   useEffect(() => {
-    const id = 1;
+    const id = this.props.match.params.id;
+    this.fetchMovie(id) //You will need to modify line 13 of `Movie.js` in order to accept the correct id for the movie selected.
+    
     // change ^^^ that line and grab the id from the URL
     // You will NEED to add a dependency array to this effect hook
 
