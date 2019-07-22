@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import MovieList from './MovieList';
 const Movie = (props) => {
   const [movie, setMovie] = useState({});
  
   useEffect(() => {
-    const id = this.props.match.params.id;
-    this.fetchMovie(id) //You will need to modify line 13 of `Movie.js` in order to accept the correct id for the movie selected.
-    
+    const id = props.match.params.id;
+
     // change ^^^ that line and grab the id from the URL
     // You will NEED to add a dependency array to this effect hook
-
+  
        axios
         .get(`http://localhost:5000/api/movies/${id}`)
         .then(response => {
@@ -19,7 +19,7 @@ const Movie = (props) => {
         .catch(error => {
           console.error(error);
         });
-
+      
   },[]);
   
   // Uncomment this only when you have moved on to the stretch goals
@@ -45,11 +45,11 @@ const Movie = (props) => {
         </div>
         <h3>Actors</h3>
 
-        {stars.map(star => (
+        {/* {stars.map(star => (
           <div key={star} className="movie-star">
             {star}
           </div>
-        ))}
+        ))} */}
       </div>
       <div className="save-button">Save</div>
     </div>
