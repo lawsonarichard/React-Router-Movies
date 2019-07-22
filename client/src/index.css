@@ -1,11 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   background-color: #f2f2f2;
+  font-family: 'Darker Grotesque', sans-serif;
+  width: 1280px;
+  margin: 0 auto;
+}
+.movie-list {
+  
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+.movie-boxart {
+  width: 300px;
+  height: auto;
 }
 
+.movie-boxart img {
+  width:100%;
+  height:auto;
+}
 .movie-card {
+  border-radius:2rem;
   background-color: #fff;
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
@@ -13,9 +34,19 @@ body {
   padding: 1rem;
   cursor: pointer;
   position: relative;
-  margin: 1rem auto;
+  margin: 1rem .5rem;
+  
 }
 
+h2 {
+  font-size: 2rem;
+  width:300px;
+}
+a:-webkit-any-link {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
 .movie-director {
   padding: 4px 0;
   font-size: 0.8rem;
