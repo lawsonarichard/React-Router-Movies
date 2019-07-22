@@ -10,6 +10,7 @@ app.use(CORS());
 const movies = [
 	{
 		id: 0,
+		boxart: 'https://images-na.ssl-images-amazon.com/images/I/81L7gpjeXWL._SL1500_.jpg',
 		title: 'The Godfather',
 		director: 'Francis Ford Coppola',
 		metascore: 100,
@@ -17,6 +18,7 @@ const movies = [
 	},
 	{
 		id: 1,
+		boxart: 'http://i.imgur.com/A7oz1B4.jpg',
 		title: 'Star Wars',
 		director: 'George Lucas',
 		metascore: 92,
@@ -24,6 +26,7 @@ const movies = [
 	},
 	{
 		id: 2,
+		boxart: 'https://www.visionvideo.com/img/product/large/L99942D.jpg',
 		title: 'The Lord of the Rings: The Fellowship of the Ring',
 		director: 'Peter Jackson',
 		metascore: 92,
@@ -31,6 +34,7 @@ const movies = [
 	},
 	{
 		id: 3,
+		boxart: 'https://oldies-cdn.freetls.fastly.net/i/boxart/w340/21/97/031398219729.jpg',
 		title: 'Terminator 2: Judgement Day',
 		director: 'James Cameron',
 		metascore: 94,
@@ -38,6 +42,7 @@ const movies = [
 	},
 	{
 		id: 4,
+		boxart: 'https://oldies-cdn.freetls.fastly.net/i/boxart/w255/82/72/794043827228.jpg?',
 		title: 'Dumb and Dumber',
 		director: 'The Farely Brothers',
 		metascore: 76,
@@ -45,6 +50,7 @@ const movies = [
 	},
 	{
 		id: 5,
+		boxart: 'https://images-na.ssl-images-amazon.com/images/I/51MWAalpG0L.jpg',
 		title: 'Tombstone',
 		director: 'George P. Cosmatos',
 		metascore: 89,
